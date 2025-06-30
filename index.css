@@ -1,124 +1,195 @@
-*{
+* {
     padding: 0px;
     margin: 0px;
 }
-body{
-    background-color: rgb(31, 6, 54);
+
+body {
+    background: linear-gradient(-45deg, #090040, #471396, #B13BFF, #bddb63);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
 }
-html{
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+html {
     scroll-behavior: smooth;
 }
-a{
+
+a {
     text-decoration: none;
 }
-i{
+
+i {
     color: aqua;
+}
+
+i:hover {
     cursor: pointer;
 }
+
+
 /*Header seaction styleing*/
 
 /*Navbar styleing*/
 
-.navbar{
-    box-shadow: 20px 20px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 8.5px );
-    -webkit-backdrop-filter: blur( 8.5px );
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+.navbar {
+    box-shadow: 20px 20px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(8.5px);
+    -webkit-backdrop-filter: blur(8.5px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
     display: flex;
-    width:100%;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
     position: fixed;
     padding: 12px;
     z-index: 2;
 }
-.navbar .heading{
+
+.navbar-close {
+    display: none;
+}
+
+.navbar-open {
+    display: none;
+}
+
+
+.navbar .heading {
     color: white;
 }
-.navbar .navbar-items .navbar-item{
-    color: white;
-}
-.navbar .navbar-items{
+
+.navbar .navbar-items {
     display: flex;
     gap: 30px;
-}
-.navbar-items{
     list-style: none;
 }
-.navbar-items .navbar-item{
+
+.navbar-items .navbar-item {
     font-size: 20px;
     margin-right: 40px;
+    color: whitesmoke;
 }
-.navbar-items .navbar-item:hover{
+
+.navbar-items .navbar-item:hover {
     cursor: pointer;
+    border-bottom: 3px solid orange;
 }
 
 
 /* Main seaction styleing*/
 
-.main-seaction-content{
-    display: flex;
-    align-items: center;
-    height:100vh;
-    justify-content: space-around;
+.main-seaction {
+    padding: 50px 120px;
+    height: 100vh;
 }
-.main-seaction-img{
-    width: 400px;
-    height: 400px;
+
+.main-seaction-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+    margin-top: 150px;
+}
+
+.main-seaction-img {
+    width: 350px;
+    height: 350px;
     border-radius: 50%;
     background-position: center;
     background-size: cover;
+    transform: translateY(-400px);
+    opacity: 0;
+    animation: slide 2s ease-out forwards;
 }
-.main-seaction-words{
-    display:flex;
+
+@keyframes slide {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.main-seaction-words {
+    display: flex;
     flex-direction: column;
-    gap:20px;
+    gap: 20px;
 }
-.main-seaction-word{
+
+.main-seaction-word {
     color: white;
-    padding-right: 60px;
+
 }
-.typeing-animation{
-    color: blue;
+
+.typeing-animation {
+    color: aqua;
     overflow: hidden;
     border-right: 3px solid;
     white-space: nowrap;
-    display:flex;
-    width:100%;
-    animation: type 5s steps(20) infinite,
-    blink .5s step-end infinite;
+    display: flex;
+    width: 300px;
+    animation: type 4s steps(80) infinite,
+        step-end infinite;
+    text-transform: uppercase;
 }
 
-@keyframes type{
- 
-    from{width: 0;}
-    to{width: 90%;}
-} 
-@keyframes blink  {
-   from,to{
-    border-color: transparent;
-   }
-   50%{border-color: blue;}
+@keyframes type {
+
+    from {
+        width: 0;
+    }
 }
-.main-seaction-icon{
+
+@keyframes blink {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: orange;
+    }
+}
+
+.main-seaction-icon {
     display: flex;
     gap: 0px 10px;
 }
-#main-seaction-icon1{
+
+.main-seaction-word {
+    font-size: 22px;
+}
+
+#main-seaction-icon1 {
     padding: 8px 10px;
     color: aqua;
     border: 1px solid aqua;
     border-radius: 50%;
     font-size: 24px;
 }
-#main-seaction-icon2{
+
+#main-seaction-icon2 {
     padding: 8px 10px;
     color: aqua;
     font-size: 24px;
     border: 1px solid aqua;
     border-radius: 50%;
 }
-#main-seaction-icon3{
+
+#main-seaction-icon3 {
     padding: 8px 10px;
     font-size: 24px;
     color: aqua;
@@ -126,58 +197,76 @@ i{
     border-radius: 50%;
 }
 
-#main-seaction-icon1:hover{
-cursor: pointer;
-}
-#main-seaction-icon2:hover{
+#main-seaction-icon1:hover {
     cursor: pointer;
-    }
-#main-seaction-icon3:hover{
-        cursor: pointer;
-        }
-.main-seaction-img{
-    box-shadow: 40px 5px  50px aqua,-40px -5px 50px aqua;
+}
+
+#main-seaction-icon2:hover {
+    cursor: pointer;
+}
+
+#main-seaction-icon3:hover {
+    cursor: pointer;
+}
+
+.main-seaction-img {
+    box-shadow: 20px 5px 50px aqua, -20px -5px 50px aqua;
     border: 5px solid white;
 }
-.contact-button{
-    padding:10px 20px;
-    width:100px;
-    background-color:aqua;
+
+.contact-button {
+    padding: 10px 15px;
+    width: 110px;
+    background-color: aqua;
     border-radius: 20px;
-    border: 1px solid;
-    box-shadow: 10px 0px  30px aqua,-0px -10px 30px aqua;
+    border: none;
+    box-shadow: 10px 0px 30px aqua, -0px -10px 30px aqua;
     margin-top: 5px;
+    outline: none;
+    color: black;
+    font-size: 22px;
 }
-.contact-button:hover{
+
+.contact-button:hover {
     cursor: pointer;
 }
 
 /*About-seaction styleing*/
 
-.about-seaction{
- padding:100px 70px;
+.about-seaction {
+    padding: 100px 70px;
 }
-.about-seaction-text{
+
+.about-seaction-text {
     width: 50%;
 }
-.about-seaction-content{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+
+.about-seaction-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-.about-seaction-heading{
+
+.about-seaction-heading {
     color: white;
     margin-bottom: 30px;
+    border-bottom: 3px solid orange;
+    width: 140px;
+    color: aqua;
 }
-.about-seaction-tittle{
+
+.about-seaction-tittle {
     color: white;
     margin-top: 10px;
 }
-.about-seaction-words{
+
+.about-seaction-words {
     color: white;
     margin-top: 15px;
+    line-height: 28px;
 }
-.about-seaction-button{
+
+.about-seaction-button {
     outline-offset: white;
     padding: 10px 20px;
     margin-top: 20px;
@@ -185,321 +274,423 @@ cursor: pointer;
     background-color: aqua;
     border: none;
     outline: none;
-    box-shadow: 10px 0px  30px aqua -10px 30px  aqua;
+    box-shadow: 10px 0px 30px aqua -10px 30px aqua;
 }
+
+.about-seaction-button:hover {
+    cursor: pointer;
+}
+
 /*skill seaction styleing*/
 
-.skill-seaction-img{
-    width: 30px;
-    height:30px;
-    margin-top: 50px;
-}
-.skill-seaction{
-    padding: 100px 80px;
-}
-.technical-seaction{
-    padding: 50px 50px;
-    width: 450px;
-    height: 450px;
-    background-color: rgb(57, 17, 95);
-    margin-top: 50px;
-}
-.skill-seaction-heading{
-    color: white;
-    text-align: center;
-}
-.skill-heading{
-    margin-top: 20px;
-    color: white;
-}
-.skill-heading::after{
-    content: "";
-    display: block;
-    width: 150px;
-    height: 4px;
-    border-radius: 4px;
-    background-color: white;
-}
-.skill-seaction-tittle1{
-    color: white;
-    margin-top: 10px;
-}
-.level1{
-    width: 300px;
-    height: 8px;
-    background-color: aqua;
-}
-.level2{
-    width:20px;
-    height: 8px;
-    background-color: black;
-    position: relative;
-    left: 290px;
-    bottom: 8px;
-}
-.level3{
-    width: 260px;
-    height: 8px;
-    background-color: aqua;
-}
-.level4{
-    width:50px;
-    height: 8px;
-    background-color: black;
-    position: relative;
-    left: 260px;
-    bottom: 8px;
-}
-.level5{
-    width: 200px;
-    height: 8px;
-    background-color: aqua;
-}
-.level6{
-    width:100px;
-    height: 8px;
-    background-color: black;
-    position: relative;
-    left: 200px;
-    bottom: 8px;
-}
-.persentage1{
-    color: white;
-    position: absolute;
-    top:1742px;
-    left:410px;
-}
-.persentage2{
-    color: white;
-    position: absolute;
-    top:1875px;
-    left:380px;
-}
-.persentage3{
-    color: white;
-    position: absolute;
-    top:2005px;
-    left:320px;
+.skills-seaction {
+    padding: 50px 120px;
+    height: 50vh;
 }
 
-/* loading seaction styleing*/
-.loading-seaction{
-    position: relative;
-    width: 440px ;
-    height: 500px;
-    background-color: rgb(57, 17, 95);
-    position: absolute;
-    top:1565px;
-    left:900px;
-}
-.loading-seaction-content{
-    position: relative;
-}
-.load1{
-    width: 100px;
-    height: 100px;
-    border: 5px solid;
-    border-top-color: aqua;
-    border-left-color: aqua;
-    border-bottom-color:aqua;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top:70px;
-    margin-left: 50px;
-}
-.load2{
-    width: 100px;
-    height: 100px;
-    border: 5px solid;
-    border-top-color: aqua;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    left:260px;
-    top: 100px;
-}
-.load3{
-    width: 100px;
-    height: 100px;
-    border: 5px solid;
-    border-top-color: aqua;
-    border-left-color: aqua;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 60px;
-    margin-left: 50px;
-}
-.load4{
-    width: 100px;
-    height: 100px;
-    border: 5px solid;
-    border-top-color: aqua;
-    border-left-color: aqua;
-    border-bottom-color:aqua;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    left:260px;
-    top: 300px;
-}
-.loading-seaction-heading{
-    color: white;
-    margin-top: 20px;
-    margin-left: 50px;
-}
-.loading-seaction-heading::after{
-    content: "";
-    display: block;
-    background-color: white;
-    width: 170px;
-    height: 4px;
-    border-radius: 4px;
-}
-.load-number{
-color: white;
-}
-.loading-seaction-skill-name1{
-    color: white;
-    margin-top: 10px;
-    margin-left: 50px;
+.skills-seactions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 100px;
 }
 
-.loading-seaction-skill-name2{
-    color: white;
-    position: absolute;
-    left: 260px;
-    top:220px;
+.skills-seaction-heading {
+    color: aqua;
+    width: 270px;
+    border-bottom: 3px solid orange;
 }
 
-.loading-seaction-skill-name3{
-    color: white;
-    margin-top: 10px;
-    margin-left: 35px;
+.skill-seaction1 {
+    background-color: rgb(186, 219, 249);
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border-radius: 10px;
 }
 
-.loading-seaction-skill-name4{
-    color: white;
-    position: absolute;
-    left: 270px;
-    top:420px;
+.skill-seaction1:hover {
+    cursor: pointer;
+    box-shadow: 0px 3px 20px aqua, -3px -3px 20px green;
+    scale: 1.1;
+}
+
+.fa-code,
+.fa-hard-drive,
+.fa-paintbrush {
+    color: rgba(0, 8, 121, 0.37);
+    font-size: 35px;
+}
+
+.skill-seaction1-para {
+    font-size: 24px;
 }
 
 /*contact seaction styleing*/
+.contact-seaction {
+    padding: 50px 120px;
+    height: 70vh;
+}
 
-.contact-seaction{
-    padding: 100px 80px;
+.contact-seaction-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 80px;
 }
-.contact-seaction-content{
-    display: flex;
+
+.contact-seaction-heading {
+    color: aqua;
+    border-bottom: 3px solid orange;
+    width: 127px;
 }
-.contact-seaction-heading{
-    margin-left: 250px;
+
+.contact-seaction-subheading,
+.contact-seaction-para,
+.contact-seaction-email,
+.contact-seaction-number {
     color: white;
 }
-.contact-seaction-subheading{
-    margin-top: 50px;
-    color: white;
-}
-.contact-seaction-para{
-    width: 600px;
-    margin-top: 20px;
-    color: white;
-}
-.contact-seaction-email{
-    margin-top: 20px;
-    color: white;
-}
-.contact-seaction-number{
-    margin-top: 10px;
-    color: white;
-}
-.contact-seaction-icon{
-    margin-top: 20px;
-}
-.contact-seaction-inputs{
+
+.contact-seaction-divder {
     display: flex;
     flex-direction: column;
+    row-gap: 20px;
+}
+
+.contact-icons {
+    display: flex;
     gap: 10px;
-    margin-left: 110px;
 }
-.contact-seaction-inputs1{
-    width: 600px;
-    height: 40px;
-    background-color: rgb(140, 137, 137);
-    padding: 0px 20px;
+
+.contact-seaction-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 50px;
 }
-.contact-seaction-inputs2{
-    width: 600px;
-    height: 40px;
-    background-color: rgb(140, 137, 137);
-    padding: 0px 20px;
+
+.contact-seaction-inputs,
+.contact-seaction-input {
+    padding: 10px 0px;
 }
-.contact-seaction-inputs3{
-    width: 600px;
-    height: 40px;
-    background-color: rgb(140, 137, 137);
-    padding: 0px 20px;
-}
-.contact-seaction-inputs4{
-    width: 600px;
-    height: 150px;
-    background-color: rgb(140, 137, 137);
+
+.contact-seaction-button {
     padding: 10px 20px;
-    
-}
-.contact-seaction-inputs1::placeholder{
-    color:black;
-}
-.contact-seaction-inputs2::placeholder{
-    color:black;
-}
-.contact-seaction-inputs3::placeholder{
-    color:black;
-}
-.contact-seaction-inputs4::placeholder{
-    color:black;
-}
-.contact-seaction-button{
-    margin-top: 30px;
-    border-radius: 30px;
-    color: black;
-    padding: 10px 10px;
+    width: 100px;
     background-color: aqua;
-    box-shadow: 5px 5px 10px aqua,-5px -5px 10px aqua;
-    border: none;
-    outline: none;
+    border-radius: 20px;
+    border: 1px solid;
+    box-shadow: 5px 0px 30px aqua, -0px -5px 30px aqua;
+    margin-top: 5px;
 }
-.contact-seaction-button:hover{
-   cursor: pointer;
+
+.contact-seaction-button:hover {
+    cursor: pointer;
 }
 
 /*footer seaction styleing*/
+.footer-seaction {
+    background-color: rgb(48, 16, 78);
+}
 
-.footer-seaction{
-    margin-top: 50px;
+.footer-seaction-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px 20px;
+    gap: 20px;
 }
-.footer-seaction-content{
+
+.footer-seaction-numbers {
     display: flex;
-    justify-content: space-between;
+    gap: 10px;
     align-items: center;
-    padding: 20px 30px;
-    height: 40px;
-    background-color: aqua;
 }
-.footer-seaction-icon i{
-    color: blue;
+
+.footer-seaction-email {
+    font-size: 22px;
 }
-.footer-seaction-email{
+
+.footer-seaction-number,
+.footer-seaction-email {
+    color: white;
+}
+
+.footer-seaction-number,
+.footer-seaction-email:hover {
     cursor: pointer;
 }
-.footer-seaction-number{
-    cursor: pointer;
+
+.footer-seaction-icon {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+
+@media screen and (min-width:900px) and (max-width:1200px) {
+
+    /* Main Seaction Styleing*/
+
+    .main-seaction {
+        padding: 50px 70px;
+        height: 100vh;
+    }
+
+    .main-seaction-img {
+        width: 280px;
+        height: 280px;
+        margin-left: 40px;
+    }
+
+    /* About Seaction Styleing*/
+
+    .about-seaction-text {
+        width: 100%;
+        margin-left: 50px;
+    }
+
+    /* Skills Seaction Styleing*/
+
+    .skills-seaction {
+        height: 80vh;
+    }
+
+}
+
+@media screen and (max-width:896px) {
+
+    /* Main Seaction Styleing*/
+
+    .main-seaction-img {
+        width: 250px;
+        height: 250px;
+        margin-left: 80px;
+    }
+
+    .main-seaction {
+        padding: 50px 40px;
+        height: 100vh;
+    }
+
+    .main-seaction-words {
+        margin-left: 50px;
+    }
+
+    /* contact seaction syleing */
+
+    .contact-seaction {
+        padding: 50px 120px;
+        height: 100vh;
+    }
+
+    /* About Seaction Styleing*/
+
+    .about-seaction-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    .about-seaction-text {
+        width: 100%;
+        margin-left: 30px;
+    }
+
+    /* Skills Seaction Styleing*/
+    .skills-seaction {
+        padding: 50px 120px;
+        height: 100vh;
+    }
+
+    /* Contact Seaction Styleing*/
+
+    .contact-seaction-divder {
+        margin-left: 50px;
+    }
+}
+
+@media screen and (min-width:620px) and (max-width:840px) {
+
+    /* Navbar seaction styleing */
+
+    .navbar .navbar-items {
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: whitesmoke;
+        width: 300px;
+        height: 100vh;
+        gap: 80px;
+        align-items: center;
+        justify-content: center;
+        transform: translateX(-400px);
+    }
+
+    .navbar-items .navbar-item {
+        color: black;
+    }
+
+    .navbar-close {
+        display: block;
+        padding: 10px 20px;
+        border-radius: 20px;
+        background-color: orange;
+        margin-right: 25px;
+    }
+
+    .navbar-close:hover {
+        cursor: pointer;
+        background-color: aqua;
+        color: black;
+    }
+
+    .navbar-open {
+        display: block;
+        margin-right: 50px;
+        padding: 10px 20px;
+        background-color: orange;
+    }
+
+    .navbar-open:hover {
+        background-color: whitesmoke;
+        cursor: pointer;
+    }
+
+    /* Main seaction styleing */
+
+    .main-seaction-content {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 50px;
+    }
+
+    .main-seaction-img {
+        width: 250px;
+        height: 250px;
+        margin-left: 0px;
+    }
+
+    /* contact seaction styleing */
+
+    .contact-seaction {
+        padding: 50px 120px;
+        height: 105vh;
+    }
+
+}
+
+@media screen and (min-width:420px) and (max-width:621px) {
+
+    /* Navbar seaction styleing */
+
+    .navbar .navbar-items {
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: whitesmoke;
+        width: 300px;
+        height: 100vh;
+        gap: 80px;
+        align-items: center;
+        justify-content: center;
+        transform: translateX(-400px);
+    }
+
+    .navbar-items .navbar-item {
+        color: black;
+    }
+
+    .navbar-close {
+        display: block;
+        padding: 10px 20px;
+        border-radius: 20px;
+        background-color: orange;
+        margin-right: 25px;
+    }
+
+    .navbar-close:hover {
+        cursor: pointer;
+        background-color: aqua;
+        color: black;
+    }
+
+    .navbar-open {
+        display: block;
+        margin-right: 50px;
+        padding: 10px 20px;
+        background-color: orange;
+    }
+
+    .navbar-open:hover {
+        background-color: whitesmoke;
+        cursor: pointer;
+    }
+
+    /* Main seaction styleing */
+
+    .main-seaction-content {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 80px;
+    }
+
+    .main-seaction-img {
+        width: 200px;
+        height: 200px;
+        margin-left: 0px;
+    }
+
+    .main-seaction-word {
+        font-size: 18px;
+    }
+
+    .main-seaction-words {
+        margin-top: 20px;
+    }
+
+    /* About seaction styleing */
+
+    .about-seaction {
+        padding: 70px;
+    }
+
+    .about-seaction-text {
+        width: 100%;
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+
+    /* Skills seaction styleing */
+
+    .skills-seaction {
+        padding: 70px 100px;
+        height: 100vh;
+    }
+
+    /* Contact seaction styleing */
+
+    .contact-seaction-divder {
+        margin-left: 0px;
+    }
+
+    .contact-seaction-inputs {
+        margin-left: 0px;
+    }
+
+    .contact-seaction {
+        padding: 50px 120px;
+        height: 110vh;
+    }
 }
