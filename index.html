@@ -1,23 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile</title>
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
+
     <header>
         <div class="navbar">
             <h1 class="heading">Profile</h1>
-            <ul class="navbar-items">
-              <a href="#main"><li class="navbar-item">Home</li></a>
-              <a href="#about"><li class="navbar-item">About</li></a>
-              <a href="#skill"><li class="navbar-item">Skills</li></a>
-              <a href="#contact"><li class="navbar-item">Project</li></a>
-              <a href="#contact"><li class="navbar-item">Contact</li></a>
+
+            <ul class="navbar-items" id="menu">
+
+                <button class="navbar-close" id="close" onclick="seran()">Close</button>
+                <a href="#main">
+                    <li class="navbar-item">Home</li>
+                </a>
+                <a href="#about">
+                    <li class="navbar-item">About</li>
+                </a>
+                <a href="#skills">
+                    <li class="navbar-item">Skills</li>
+                </a>
+                <a href="#contact">
+                    <li class="navbar-item">Project</li>
+                </a>
+                <a href="#contact">
+                    <li class="navbar-item">Contact</li>
+                </a>
             </ul>
+            <button class="navbar-open" id="open" onclick="suba()">Open</button>
         </div>
     </header>
 
@@ -27,18 +46,18 @@
                 <div class="main-seaction-words">
                     <h2 class="main-seaction-word">Hello, its Me</h2>
                     <h1 class="main-seaction-word">Seran</h1>
-                    <h3 class="main-seaction-word">And I'am a <span class="typeing-animation">Frontend developer</span></h3>
-                    <p class="main-seaction-word">I'am a web Designer.i will create any frontend design</p>
-                    <p class="main-seaction-word">Use Html,Css,Javasrict</p>
+                    <h3 class="typeing-animation">I'am a Full Stack developer</h3>
+                    <p class="main-seaction-word">I'am a web Designer.i will create any full stack design</p>
+                    <p class="main-seaction-word">Use - Html Css Javascript Python Django Mysql</p>
                     <div class="main-seaction-icon">
                         <i id="main-seaction-icon1" class="fa-brands fa-facebook-f"></i>
                         <i id="main-seaction-icon2" class="fa-brands fa-linkedin"></i>
                         <i id="main-seaction-icon3" class="fa-brands fa-whatsapp"></i>
                     </div>
-                    <h3 class="contact-button">Contact Me</h3>
+                    <a href="mailto:36seran@gmail.com"  class="contact-button">Contact Me</a>
                 </div>
                 <div class="main-seaction-image">
-                     <img class="main-seaction-img" src="WhatsApp Image 2025-01-09 at 4.38.15 PM.jpeg" alt="Me">
+                    <img class="main-seaction-img" src="WhatsApp Image 2025-01-09 at 4.38.15 PM.jpeg" alt="Me">
                 </div>
             </div>
         </div>
@@ -50,101 +69,94 @@
                 </div>
                 <div class="about-seaction-text">
                     <h1 class="about-seaction-heading">About Me</h1>
-                    <h2 class="about-seaction-tittle">Frontend developer</h2>
-                    <p class="about-seaction-words">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, deleniti officia possimus aspernatur modi quam similique rem pariatur veniam sunt minima ducimus cumque assumenda incidunt enim atque facere eaque, tempora tempore inventore beatae quia dolorem laborum! Odit eligendi in ducimus mollitia recusandae aspernatur ipsam cumque neque, exercitationem, laboriosam inventore, voluptatibus praesentium ut assumenda delectus quo reiciendis. Ad, dolorum nisi! Corporis animi, harum voluptatum veniam nulla, ullam ab enim explicabo totam, accusantium dolores. Illum, dolor ipsum molestias, quia facere placeat impedit reprehenderit id quidem ullam iste dignissimos, soluta mollitia recusandae nam! Aliquid accusantium hic quis dicta, perspiciatis voluptas quas ipsum amet!</p>
+                    <h2 class="typeing-animation"> Full Stack developer</h2>
+                    <p class="about-seaction-words">As a highly skilled Ful Stack Developer I have a proven track record
+                        of creating dynamic and efficient web applications. My biggest achievement includes successfully
+                        leading a team in developing a complex e-commerce platform that increased sales by 30%. With
+                        strong proficiency in both front-end and back-end technologies, i possess the ability to design
+                        and implement scalable and user-friendly solutions. My best qualities include being
+                        detail-oriented, proactive, and a great problem solver. I am proficient in various programming
+                        languages such as JavaScript, HTML, and CSS, along with frameworks like React and Angular. With
+                        my strong communication skills and ability to work collaboratively in a fast-paced environment,
+                        I am confident in my ability to contribute to your company's success as a Full Stack Developer.
+                    </p>
                     <button class="about-seaction-button">More updates</button>
                 </div>
             </div>
         </div>
 
-        <div class="skill-seaction" id="skill">
-            <div class="technical-seaction-content">
-                <h1 class="skill-seaction-heading">My Skill</h1>
 
-                <div class="technical-seaction">
-                    <h2 class="skill-heading">Technical skill</h2>
-                    <img class="skill-seaction-img" src="html.png">
-                    <h3 class="skill-seaction-tittle1">Html</h3>
-                    <div class="level1"></div>
-                    <span><div class="level2"></div></span>
-
-                    <img class="skill-seaction-img" src="css.png">
-                    <h3 class="skill-seaction-tittle1">Css</h3>
-                    <div class="level3"></div>
-                    <span><div class="level4"></div></span>
-
-                    <img class="skill-seaction-img" src="js.png">
-                    <h3 class="skill-seaction-tittle1">Js</h3>
-                    <div class="level5"></div>
-                    <span><div class="level6"></div></span>
-                    <pre class="persentage1">95%</pre>
-                    <pre class="persentage2">80%</pre>
-                    <pre class="persentage3">50%</pre>
+        <div class="skills-seaction" id="skills">
+            <h1 class="skills-seaction-heading">Technical Expertise</h1>
+            <div class="skills-seactions">
+                <div class="skill-seaction1">
+                    <i class="fa-solid fa-code"></i>
+                    <h2 class="skill-seaction1-h2">Forntend Development</h2>
+                    <p class="skill-seaction1-para">Html-Css-Javascript</p>
                 </div>
-
-          <div class="loading-seaction">
-            <div class="loading-seaction-content">
-                <h2 class="loading-seaction-heading">Profession Skills</h2>
-                <div class="loading-seaction-animation">
-                    <div class="load1">
-                        <h4 class="load-number">80%</h4>
-                    </div>
-                    <h3 class="loading-seaction-skill-name1">Creativety</h3>
-                    <div class="load2">
-                        <h4 class="load-number">50%</h4>
-                    </div>
-                    <h3 class="loading-seaction-skill-name2">Communication</h3>
-                    <div class="load3">
-                        <h4 class="load-number">70%</h4>
-                    </div>
-                    <h3 class="loading-seaction-skill-name3">problem solving</h3>
-                    <div class="load4">
-                        <h4 class="load-number">90%</h4>
-                    </div>
-                    <h3 class="loading-seaction-skill-name4">Teamwork</h3>
+                <div class="skill-seaction1">
+                    <i class="fa-solid fa-hard-drive"></i>
+                    <h2 class="skill-seaction1-h2">Backend Development</h2>
+                    <p class="skill-seaction1-para">Python - Mysql</p>
+                </div>
+                <div class="skill-seaction1">
+                    <i class="fa-solid fa-paintbrush"></i>
+                    <h2 class="skill-seaction1-h2">UI/UX Design</h2>
+                    <p class="skill-seaction1-para">Figma - Adobe XD</p>
                 </div>
             </div>
-          </div>
         </div>
-        </div>
-       
+
         <div class="contact-seaction" id="contact">
+            <h2 class="contact-seaction-heading">Contact Me</h2>
             <div class="contact-seaction-content">
                 <div class="contact-seaction-divder">
-                <h2 class="contact-seaction-heading">Contact Me</h2>
-                <h3 class="contact-seaction-subheading">Let's Work Together</h3>
-                <p class="contact-seaction-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid sed quas laudantium aut commodi? Illum cumque enim, ullam soluta expedita temporibus. Iusto qui, fugiat vel atque sed impedit ea dolores blanditiis eius quam voluptatum ut consequatur quo dignissimos obcaecati ad asperiores dolorum. Veritatis nulla possimus, ut minus laborum libero pariatur.</p>
-                <h3 class="contact-seaction-email">36seran@gmail.com</h3>
-                <h3 class="contact-seaction-number">6380401950</h3>
-                <div class="contact-seaction-icon">
-                <i id="main-seaction-icon1" class="fa-brands fa-facebook-f"></i>
-                <i id="main-seaction-icon2" class="fa-brands fa-linkedin"></i>
-                <i id="main-seaction-icon3" class="fa-brands fa-whatsapp"></i>
+                    <h3 class="contact-seaction-subheading">Let's Work Together</h3>
+                    <p class="contact-seaction-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
+                        sed quas laudantium aut commodi? Illum cumque enim, ullam soluta expedita temporibus. Iusto qui,
+                        fugiat vel atque sed impedit ea dolores blanditiis eius quam voluptatum ut consequatur quo
+                        dignissimos obcaecati ad asperiores dolorum. Veritatis nulla possimus, ut minus laborum libero
+                        pariatur.</p>
+                    <h3 class="contact-seaction-email">36seran@gmail.com</h3>
+                    <h3 class="contact-seaction-number">6380401950</h3>
+                    <div class="contact-icons">
+                        <i id="main-seaction-icon1" class="fa-brands fa-facebook-f"></i>
+                        <i id="main-seaction-icon2" class="fa-brands fa-linkedin"></i>
+                        <i id="main-seaction-icon3" class="fa-brands fa-whatsapp"></i>
+                    </div>
+                </div>
+                <div class="contact-seaction-inputs">
+                    <input class="contact-seaction-input" type="text" placeholder="Enter Your Name" required>
+                    <input class="contact-seaction-input" type="email" placeholder="Enter Your Email" required>
+                    <input class="contact-seaction-input" type="text" placeholder="Enter Your Subract" required>
+                    <textarea class="contact-seaction-input" placeholder="Enter your Mesage"></textarea>
+                    <button class="contact-seaction-button">Submite</button>
+                </div>
             </div>
-            </div>
-            <div class="contact-seaction-inputs">
-                <input class="contact-seaction-inputs1" type="text" placeholder="Enter Your Name">
-                <input class="contact-seaction-inputs2" type="email" placeholder="Enter Your Email">
-                <input class="contact-seaction-inputs3" type="text" placeholder="Enter Your Subract">
-                <textarea class="contact-seaction-inputs4">Enter Your Message</textarea>
-                <button class="contact-seaction-button">Submite</button>
-            </div>
-        </div>
         </div>
 
         <footer>
             <div class="footer-seaction">
-            <div class="footer-seaction-content">
-            <h3 class="footer-seaction-number">6380401950</h3>
-            <h3 class="footer-seaction-email">36seran@gmail.com</h3>
-            <div class="footer-seaction-icon">
-            <i class="fa-solid fa-phone"></i>
-            <i class="fa-solid fa-phone"></i>
-            <i class="fa-solid fa-phone"></i>
-          </div>
-        </div>
-        </div>
+                <div class="footer-seaction-content">
+                    <div class="footer-seaction-numbers">
+                        <i class="fa-solid fa-phone"></i>
+                        <h3 class="footer-seaction-number">6380401950</h3>
+                    </div>
+                    <div class="footer-seaction-numbers">
+                        <i class="fa-solid fa-envelope"></i>
+                        <a href="mailto:36seran@gmail.com" class="footer-seaction-email">36seran@gmail.com</a>
+                    </div>
+                    <div class="footer-seaction-icon">
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
         </footer>
     </main>
+
+    <script src="index.js"></script>
 </body>
+
 </html>
