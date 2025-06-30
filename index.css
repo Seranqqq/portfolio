@@ -1,0 +1,505 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: rgb(31, 6, 54);
+}
+html{
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+i{
+    color: aqua;
+    cursor: pointer;
+}
+/*Header seaction styleing*/
+
+/*Navbar styleing*/
+
+.navbar{
+    box-shadow: 20px 20px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 8.5px );
+    -webkit-backdrop-filter: blur( 8.5px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    display: flex;
+    width:100%;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    padding: 12px;
+    z-index: 2;
+}
+.navbar .heading{
+    color: white;
+}
+.navbar .navbar-items .navbar-item{
+    color: white;
+}
+.navbar .navbar-items{
+    display: flex;
+    gap: 30px;
+}
+.navbar-items{
+    list-style: none;
+}
+.navbar-items .navbar-item{
+    font-size: 20px;
+    margin-right: 40px;
+}
+.navbar-items .navbar-item:hover{
+    cursor: pointer;
+}
+
+
+/* Main seaction styleing*/
+
+.main-seaction-content{
+    display: flex;
+    align-items: center;
+    height:100vh;
+    justify-content: space-around;
+}
+.main-seaction-img{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+}
+.main-seaction-words{
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+}
+.main-seaction-word{
+    color: white;
+    padding-right: 60px;
+}
+.typeing-animation{
+    color: blue;
+    overflow: hidden;
+    border-right: 3px solid;
+    white-space: nowrap;
+    display:flex;
+    width:100%;
+    animation: type 5s steps(20) infinite,
+    blink .5s step-end infinite;
+}
+
+@keyframes type{
+ 
+    from{width: 0;}
+    to{width: 90%;}
+} 
+@keyframes blink  {
+   from,to{
+    border-color: transparent;
+   }
+   50%{border-color: blue;}
+}
+.main-seaction-icon{
+    display: flex;
+    gap: 0px 10px;
+}
+#main-seaction-icon1{
+    padding: 8px 10px;
+    color: aqua;
+    border: 1px solid aqua;
+    border-radius: 50%;
+    font-size: 24px;
+}
+#main-seaction-icon2{
+    padding: 8px 10px;
+    color: aqua;
+    font-size: 24px;
+    border: 1px solid aqua;
+    border-radius: 50%;
+}
+#main-seaction-icon3{
+    padding: 8px 10px;
+    font-size: 24px;
+    color: aqua;
+    border: 1px solid aqua;
+    border-radius: 50%;
+}
+
+#main-seaction-icon1:hover{
+cursor: pointer;
+}
+#main-seaction-icon2:hover{
+    cursor: pointer;
+    }
+#main-seaction-icon3:hover{
+        cursor: pointer;
+        }
+.main-seaction-img{
+    box-shadow: 40px 5px  50px aqua,-40px -5px 50px aqua;
+    border: 5px solid white;
+}
+.contact-button{
+    padding:10px 20px;
+    width:100px;
+    background-color:aqua;
+    border-radius: 20px;
+    border: 1px solid;
+    box-shadow: 10px 0px  30px aqua,-0px -10px 30px aqua;
+    margin-top: 5px;
+}
+.contact-button:hover{
+    cursor: pointer;
+}
+
+/*About-seaction styleing*/
+
+.about-seaction{
+ padding:100px 70px;
+}
+.about-seaction-text{
+    width: 50%;
+}
+.about-seaction-content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.about-seaction-heading{
+    color: white;
+    margin-bottom: 30px;
+}
+.about-seaction-tittle{
+    color: white;
+    margin-top: 10px;
+}
+.about-seaction-words{
+    color: white;
+    margin-top: 15px;
+}
+.about-seaction-button{
+    outline-offset: white;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    background-color: aqua;
+    border: none;
+    outline: none;
+    box-shadow: 10px 0px  30px aqua -10px 30px  aqua;
+}
+/*skill seaction styleing*/
+
+.skill-seaction-img{
+    width: 30px;
+    height:30px;
+    margin-top: 50px;
+}
+.skill-seaction{
+    padding: 100px 80px;
+}
+.technical-seaction{
+    padding: 50px 50px;
+    width: 450px;
+    height: 450px;
+    background-color: rgb(57, 17, 95);
+    margin-top: 50px;
+}
+.skill-seaction-heading{
+    color: white;
+    text-align: center;
+}
+.skill-heading{
+    margin-top: 20px;
+    color: white;
+}
+.skill-heading::after{
+    content: "";
+    display: block;
+    width: 150px;
+    height: 4px;
+    border-radius: 4px;
+    background-color: white;
+}
+.skill-seaction-tittle1{
+    color: white;
+    margin-top: 10px;
+}
+.level1{
+    width: 300px;
+    height: 8px;
+    background-color: aqua;
+}
+.level2{
+    width:20px;
+    height: 8px;
+    background-color: black;
+    position: relative;
+    left: 290px;
+    bottom: 8px;
+}
+.level3{
+    width: 260px;
+    height: 8px;
+    background-color: aqua;
+}
+.level4{
+    width:50px;
+    height: 8px;
+    background-color: black;
+    position: relative;
+    left: 260px;
+    bottom: 8px;
+}
+.level5{
+    width: 200px;
+    height: 8px;
+    background-color: aqua;
+}
+.level6{
+    width:100px;
+    height: 8px;
+    background-color: black;
+    position: relative;
+    left: 200px;
+    bottom: 8px;
+}
+.persentage1{
+    color: white;
+    position: absolute;
+    top:1742px;
+    left:410px;
+}
+.persentage2{
+    color: white;
+    position: absolute;
+    top:1875px;
+    left:380px;
+}
+.persentage3{
+    color: white;
+    position: absolute;
+    top:2005px;
+    left:320px;
+}
+
+/* loading seaction styleing*/
+.loading-seaction{
+    position: relative;
+    width: 440px ;
+    height: 500px;
+    background-color: rgb(57, 17, 95);
+    position: absolute;
+    top:1565px;
+    left:900px;
+}
+.loading-seaction-content{
+    position: relative;
+}
+.load1{
+    width: 100px;
+    height: 100px;
+    border: 5px solid;
+    border-top-color: aqua;
+    border-left-color: aqua;
+    border-bottom-color:aqua;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:70px;
+    margin-left: 50px;
+}
+.load2{
+    width: 100px;
+    height: 100px;
+    border: 5px solid;
+    border-top-color: aqua;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left:260px;
+    top: 100px;
+}
+.load3{
+    width: 100px;
+    height: 100px;
+    border: 5px solid;
+    border-top-color: aqua;
+    border-left-color: aqua;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    margin-left: 50px;
+}
+.load4{
+    width: 100px;
+    height: 100px;
+    border: 5px solid;
+    border-top-color: aqua;
+    border-left-color: aqua;
+    border-bottom-color:aqua;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left:260px;
+    top: 300px;
+}
+.loading-seaction-heading{
+    color: white;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.loading-seaction-heading::after{
+    content: "";
+    display: block;
+    background-color: white;
+    width: 170px;
+    height: 4px;
+    border-radius: 4px;
+}
+.load-number{
+color: white;
+}
+.loading-seaction-skill-name1{
+    color: white;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+.loading-seaction-skill-name2{
+    color: white;
+    position: absolute;
+    left: 260px;
+    top:220px;
+}
+
+.loading-seaction-skill-name3{
+    color: white;
+    margin-top: 10px;
+    margin-left: 35px;
+}
+
+.loading-seaction-skill-name4{
+    color: white;
+    position: absolute;
+    left: 270px;
+    top:420px;
+}
+
+/*contact seaction styleing*/
+
+.contact-seaction{
+    padding: 100px 80px;
+}
+.contact-seaction-content{
+    display: flex;
+}
+.contact-seaction-heading{
+    margin-left: 250px;
+    color: white;
+}
+.contact-seaction-subheading{
+    margin-top: 50px;
+    color: white;
+}
+.contact-seaction-para{
+    width: 600px;
+    margin-top: 20px;
+    color: white;
+}
+.contact-seaction-email{
+    margin-top: 20px;
+    color: white;
+}
+.contact-seaction-number{
+    margin-top: 10px;
+    color: white;
+}
+.contact-seaction-icon{
+    margin-top: 20px;
+}
+.contact-seaction-inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 110px;
+}
+.contact-seaction-inputs1{
+    width: 600px;
+    height: 40px;
+    background-color: rgb(140, 137, 137);
+    padding: 0px 20px;
+}
+.contact-seaction-inputs2{
+    width: 600px;
+    height: 40px;
+    background-color: rgb(140, 137, 137);
+    padding: 0px 20px;
+}
+.contact-seaction-inputs3{
+    width: 600px;
+    height: 40px;
+    background-color: rgb(140, 137, 137);
+    padding: 0px 20px;
+}
+.contact-seaction-inputs4{
+    width: 600px;
+    height: 150px;
+    background-color: rgb(140, 137, 137);
+    padding: 10px 20px;
+    
+}
+.contact-seaction-inputs1::placeholder{
+    color:black;
+}
+.contact-seaction-inputs2::placeholder{
+    color:black;
+}
+.contact-seaction-inputs3::placeholder{
+    color:black;
+}
+.contact-seaction-inputs4::placeholder{
+    color:black;
+}
+.contact-seaction-button{
+    margin-top: 30px;
+    border-radius: 30px;
+    color: black;
+    padding: 10px 10px;
+    background-color: aqua;
+    box-shadow: 5px 5px 10px aqua,-5px -5px 10px aqua;
+    border: none;
+    outline: none;
+}
+.contact-seaction-button:hover{
+   cursor: pointer;
+}
+
+/*footer seaction styleing*/
+
+.footer-seaction{
+    margin-top: 50px;
+}
+.footer-seaction-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    height: 40px;
+    background-color: aqua;
+}
+.footer-seaction-icon i{
+    color: blue;
+}
+.footer-seaction-email{
+    cursor: pointer;
+}
+.footer-seaction-number{
+    cursor: pointer;
+}

@@ -1,0 +1,573 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+a:hover{
+    color: white;
+}
+/*Header Seaction*/
+
+/* navbar styleing*/
+
+.navbar{
+    background-color: rgb(17, 226, 157);
+    position: fixed;
+    width: 100%;
+}
+.navbar-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+.navbar-item{
+    display: flex;
+    list-style: none;
+    transition: all 2s ease-in-out;
+}
+.navbar-item .main-item{
+    margin: 0px 20px;
+    padding: 10px 20px;
+    font-size: 20px;
+}
+.navbar-item .main-item:hover{
+    cursor: pointer;
+    border-bottom: 5px orangered solid;
+    border-radius: 3px;
+    color: white;
+}
+.moblie-menu-link{
+    display: none;
+}
+.moblie-menu-close{
+    display: none;
+}
+.veg-seaction{
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 1px solid black;
+    background-color:rgb(17, 226, 157) ;
+}
+.veg-seaction:hover{
+    background-color: orange;
+    cursor: pointer;
+}
+
+/*main seaction styleing*/
+
+.main-seaction{
+    padding: 130px 100px;
+    background-color:cadetblue;
+}
+.main-seaction-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-seaction-content-words{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.main-seaction-content-words .main-seaction-button1{
+    width: 120px;
+    padding: 10px 20px;
+    background-color: orange;
+    border-radius: 30px;
+    border: 1px solid black;
+}
+.main-seaction-content-words .main-seaction-button1:hover{
+    background-color: white;
+    cursor: pointer;
+}
+.main-seaction-content-words .main-seaction-button2{
+    width: 120px;
+    padding: 10px 20px;
+    background-color:white;
+    border-radius: 30px;
+    border: 1px solid black;
+}
+.main-seaction-content-words .main-seaction-button2:hover{
+    background-color:orange;
+    cursor: pointer;
+}
+
+.main-seaction-image .main-seaction-image-logo{
+    width: 400px;
+    height: 400px;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+/*chicken seaction */
+
+.chicken-seaction{
+    padding: 120px 80px;
+    background-color: maroon;
+}
+.chicken-seaction-image .chicken-image{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+}
+.chicken-heading{
+ text-align: center;
+}
+.chicken-heading::after{
+    width: 150px;
+    height: 4px;
+    background-color: orange;
+    content: "";
+    display: block;
+    border-radius: 4px;
+    margin: auto;
+}
+
+.chicken-seaction-image{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    gap: 60px;
+    text-align: center;
+    padding: 70px 10px;
+}
+.chicken-div{
+    width:calc(100% / 3 - 60px);
+}
+.chicken-div i{
+   margin: 20px 0px;
+    color: yellow;
+}
+.chicken-oredr-button{
+  margin-top: 10px;
+  padding:10px 20px;
+  background-color: blue;
+  border-radius: 30px;
+  border: none;
+  box-shadow:2px 2px 4px blue ;
+}
+.chicken-oredr-button:hover{
+    cursor: pointer;
+}
+/* mutton seqaction styleing*/
+
+
+.mutton-seaction{
+    padding: 120px 80px;
+    background-color: aqua;
+}
+.mutton-seaction-image .mutton-image{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+}
+.mutton-heading{
+ text-align: center;
+}
+.mutton-heading::after{
+    width: 150px;
+    height: 4px;
+    background-color: orange;
+    content: "";
+    display: block;
+    border-radius: 4px;
+    margin: auto;
+}
+
+.mutton-seaction-image{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    gap: 60px;
+    text-align: center;
+    padding: 70px 10px;
+}
+.mutton-div{
+    width:calc(100% / 3 - 60px);
+}
+.mutton-div i{
+   margin: 20px 0px;
+    color: yellow;
+}
+.mutton-oredr-button{
+  margin-top: 10px;
+  padding:10px 20px;
+  background-color: blue;
+  border-radius: 30px;
+  border: none;
+  box-shadow:2px 2px 4px blue ;
+}
+.mutton-oredr-button:hover{
+    cursor: pointer;
+}
+
+/* Prawn seqaction styleing*/
+
+
+.prawn-seaction{
+    padding: 120px 80px; 
+    background-color: blueviolet;
+}
+.prawn-seaction-image .prawn-image{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+}
+.prawn-heading{
+ text-align: center;
+}
+.prawn-heading::after{
+    width: 150px;
+    height: 4px;
+    background-color: orange;
+    content: "";
+    display: block;
+    border-radius: 4px;
+    margin: auto;
+}
+
+.prawn-seaction-image{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    gap: 60px;
+    text-align: center;
+    padding: 70px 10px;
+}
+.prawn-div{
+    width:calc(100% / 3 - 60px);
+}
+.prawn-div i{
+   margin: 20px 0px;
+    color: yellow;
+}
+.prawn-oredr-button{
+  margin-top: 10px;
+  padding:10px 20px;
+  background-color: blue;
+  border-radius: 30px;
+  border: none;
+  box-shadow:2px 2px 4px blue ;
+}
+.prawn-oredr-button:hover{
+    cursor: pointer;
+}
+
+/* Fish seqaction styleing*/
+
+
+.fish-seaction{
+    padding: 120px 80px; 
+    background-color: yellow;
+}
+.fish-seaction-image .fish-image{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+}
+.fish-heading{
+ text-align: center;
+}
+.fish-heading::after{
+    width: 150px;
+    height: 4px;
+    background-color: orange;
+    content: "";
+    display: block;
+    border-radius: 4px;
+    margin: auto;
+}
+
+.fish-seaction-image{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    gap: 60px;
+    text-align: center;
+    padding: 70px 10px;
+}
+.fish-div{
+    width:calc(100% / 3 - 60px);
+}
+.fish-div i{
+   margin: 20px 0px;
+    color: yellow;
+}
+.fish-oredr-button{
+  margin-top: 10px;
+  padding:10px 20px;
+  background-color: blue;
+  border-radius: 30px;
+  border: none;
+  box-shadow:2px 2px 4px blue ;
+}
+.fish-oredr-button:hover{
+    cursor: pointer;
+}
+
+/* footer seaction styleing*/
+
+.footer-seaction{
+    background-color: aquamarine;
+}
+.footer-content{
+    display: flex;
+    padding: 10px 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-sub-heading{
+  margin: 5px;
+  color: blue;
+}
+.footer-sub-heading:hover{
+    cursor: pointer;
+}
+/* responsive website in 900px*/
+@media screen and (max-width:900px) {
+    .moblie-menu-link{
+        display: block;
+        text-decoration: none;
+        color: black;
+        padding: 10px 20px;
+        border: 1px solid black;
+        border-radius: 30px;
+    }
+    .moblie-menu-link:hover{
+        background-color:orange;
+    }
+    .heading{
+        font-size: 26px;
+    }
+
+    .navbar-item{
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        position:fixed;
+        align-items: center;
+        left: 0px;
+        top: 0.1px;
+        width: 250px;
+        height: 100vh;
+        background-color: white;
+       transform: translateX(-300px);
+    }
+    .navbar-item .main-item:hover{
+        color: black;
+    }
+    .navbar-item .main-item{
+        margin-top: 90px;
+    }
+    .moblie-menu-close{
+        display: block;
+        color: black;
+        padding: 10px 20px;
+        border: 1px solid black;
+        border-radius: 30px;
+        font-size: 18px;
+        margin-top: 40px;
+        background-color: orange;
+    }
+    .moblie-menu-close:hover{
+        background-color:white;
+    }
+
+    /*main seaction styleing*/
+
+    .main-seaction-content{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .main-seaction{
+        padding: 86px 70px;
+    }
+    .main-seaction-content-words{
+        margin-top: 50px;
+    }
+    .main-seaction-image .main-seaction-image-logo{
+        width: 300px;
+        height: 300px;
+    }
+
+    /* chicken seaction styleing*/
+    .chicken-seaction-image .chicken-image{
+        max-width: 200px ;
+        max-height: 200px;
+        border-radius: 50%;
+        background-position: center;
+        background-size: cover;
+    }
+    .chicken-div{
+        width:calc(100% / 2 - 60px);
+    }
+    .chicken-seaction-image{
+        gap: 50px;
+    }
+
+      /* mutton seaction styleing*/
+      .mutton-seaction-image .mutton-image{
+        max-width: 200px ;
+        max-height: 200px;
+        border-radius: 50%;
+        background-position: center;
+        background-size: cover;
+    }
+    .mutton-div{
+        width:calc(100% / 2 - 60px);
+    }
+    .mutton-seaction-image{
+        gap: 50px;
+    }
+
+         /* Prawn seaction styleing*/
+
+         .prawn-seaction-image .prawn-image{
+            max-width: 200px ;
+            max-height: 200px;
+            border-radius: 50%;
+            background-position: center;
+            background-size: cover;
+        }
+        .prawn-div{
+            width:calc(100% / 2 - 60px);
+        }
+        .prawn-seaction-image{
+            gap: 50px;
+        }
+
+         /* Fish seaction styleing*/
+
+         .fish-seaction-image .fish-image{
+            max-width: 200px ;
+            max-height: 200px;
+            border-radius: 50%;
+            background-position: center;
+            background-size: cover;
+        }
+        .fish-div{
+            width:calc(100% / 2 - 60px);
+        }
+        .fish-seaction-image{
+            gap: 50px;
+        }
+
+    
+} 
+/* responsive website in 1200px*/  
+@media screen and (max-width:1200px) {
+    /* chicken seaction styleing*/
+    .chicken-seaction-image{
+        gap: 80px;
+    }
+    .chicken-seaction-image .chicken-image{
+        width: 230px;
+        height: 230px;
+        border-radius: 50%;
+        background-position: center;
+        background-size: cover;
+    }
+    .chicken-oredr-button{
+        margin-top: 10px;
+    }
+
+      /* mutton seaction styleing*/
+      .chicken-seaction-image{
+        gap: 80px;
+    }
+    .mutton-seaction-image .mutton-image{
+        width: 230px;
+        height: 230px;
+        border-radius: 50%;
+        background-position: center;
+        background-size: cover;
+    }
+    .mutton-oredr-button{
+        margin-top: 10px;
+    }
+
+       /* Prawn seaction styleing*/
+
+       .prawn-seaction-image{
+        gap: 80px;
+    }
+    .prawn-seaction-image .prawn-image{
+        width: 230px;
+        height: 230px;
+        border-radius: 50%;
+        background-position: center;
+        background-size: cover;
+    }
+    .prawn-oredr-button{
+        margin-top: 10px;
+    }
+
+         /* Fish seaction styleing*/
+
+         .fish-seaction-image{
+            gap: 80px;
+        }
+        .fish-seaction-image .fish-image{
+            width: 230px;
+            height: 230px;
+            border-radius: 50%;
+            background-position: center;
+            background-size: cover;
+        }
+        .fish-oredr-button{
+            margin-top: 10px;
+        }
+}
+/* responsive website in 650px*/  
+@media screen and (max-width:650px) {
+
+    /* chicken seaction styleing*/
+
+    .chicken-div{
+        width:100%
+    }
+
+    /* mutton seaction styleing*/
+
+    .mutton-div{
+        width:100%
+    }
+
+      /* prawn seaction styleing*/
+
+      .prawn-div{
+        width:100%
+    }
+
+         /*Fish  seaction styleing*/
+
+         .fish-div{
+            width:100%
+        }
+
+        /*Footer seaction styleing*/
+
+        .footer-heading{
+            font-size: 20px;
+        }
+        .footer-content{
+            padding: 20px 0px;
+        }
+}
