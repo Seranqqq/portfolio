@@ -122,7 +122,6 @@ i:hover {
     }
 }
 
-
 .main-seaction-words {
     display: flex;
     flex-direction: column;
@@ -145,7 +144,8 @@ i:hover {
         step-end infinite;
     text-transform: uppercase;
 }
-/*
+
+/* typing animation 
 @keyframes type {
 
     from {
@@ -167,7 +167,6 @@ i:hover {
 */
 
 .main-seaction-icon {
-    width:250px;
     display: flex;
     gap: 0px 10px;
 }
@@ -330,68 +329,6 @@ i:hover {
     font-size: 24px;
 }
 
-/*contact seaction styleing*/
-.contact-seaction {
-    padding: 50px 120px;
-    height: 70vh;
-}
-
-.contact-seaction-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    margin-top: 80px;
-}
-
-.contact-seaction-heading {
-    color: aqua;
-    border-bottom: 3px solid orange;
-    width: 127px;
-}
-
-.contact-seaction-subheading,
-.contact-seaction-para,
-.contact-seaction-email,
-.contact-seaction-number {
-    color: white;
-}
-
-.contact-seaction-divder {
-    display: flex;
-    flex-direction: column;
-    row-gap: 20px;
-}
-
-.contact-icons {
-    display: flex;
-    gap: 10px;
-}
-
-.contact-seaction-inputs {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    margin-left: 50px;
-}
-
-.contact-seaction-inputs,
-.contact-seaction-input {
-    padding: 10px 0px;
-}
-
-.contact-seaction-button {
-    padding: 10px 20px;
-    width: 100px;
-    background-color: aqua;
-    border-radius: 20px;
-    border: 1px solid;
-    box-shadow: 5px 0px 30px aqua, -0px -5px 30px aqua;
-    margin-top: 5px;
-}
-
-.contact-seaction-button:hover {
-    cursor: pointer;
-}
 
 /*footer seaction styleing*/
 .footer-seaction {
@@ -511,9 +448,6 @@ i:hover {
 
     /* Contact Seaction Styleing*/
 
-    .contact-seaction-divder {
-        margin-left: 50px;
-    }
 }
 
 @media screen and (min-width:620px) and (max-width:840px) {
@@ -581,19 +515,13 @@ i:hover {
         margin-left: 0px;
     }
 
-    /* contact seaction styleing */
-
-    .contact-seaction {
-        padding: 50px 120px;
-        height: 105vh;
-    }
-
 }
 
 @media screen and (min-width:420px) and (max-width:621px) {
+
     body {
-    background: linear-gradient( #0900403);
-     }
+        background: #090040;
+    }
 
     /* Navbar seaction styleing */
 
@@ -659,7 +587,7 @@ i:hover {
     }
 
     .main-seaction-word {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .main-seaction-words {
@@ -685,26 +613,14 @@ i:hover {
         height: 100vh;
     }
 
-    /* Contact seaction styleing */
 
-    .contact-seaction-divder {
-        margin-left: 0px;
-    }
-
-    .contact-seaction-inputs {
-        margin-left: 0px;
-    }
-
-    .contact-seaction {
-        padding: 50px 120px;
-        height: 110vh;
-    }
 }
+
 @media screen and (max-width:420px) {
 
-       body {
-    background: linear-gradient( #0900403);
-     }
+    body {
+        background: #090040;
+    }
 
     /* Navbar seaction styleing */
 
@@ -761,6 +677,7 @@ i:hover {
         justify-content: center;
         gap: 20px;
         margin-top: 80px;
+        margin-left: 30px;
     }
 
     .main-seaction-img {
@@ -769,13 +686,8 @@ i:hover {
         margin-left: 0px;
     }
 
-     .main-seaction-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    margin-top: 150px;
-}
-    .main-seaction-word {
-        font-size: 15px;
+    .main-seaction-words {
+        margin-top: 100px;
     }
 
     .main-seaction-words {
@@ -801,24 +713,14 @@ i:hover {
         height: 100vh;
     }
 
-    /* Contact seaction styleing */
-
-    .contact-seaction-divder {
-        margin-left: 0px;
-    }
-
-    .contact-seaction-inputs {
-        margin-left: 0px;
-    }
-
-    .contact-seaction {
-        padding: 50px 120px;
-        height: 110vh;
-    }
 }
 
 @media screen and (max-width:320px) {
 
+    body {
+        background: #090040;
+    }
+
     /* Navbar seaction styleing */
 
     .navbar .navbar-items {
@@ -827,12 +729,12 @@ i:hover {
         left: 0;
         top: 0;
         background-color: whitesmoke;
-        width: 020px;
+        width: 300px;
         height: 100vh;
-        gap: 50px;
+        gap: 80px;
         align-items: center;
         justify-content: center;
-        transform: translateX(-150px);
+        transform: translateX(-400px);
     }
 
     .navbar-items .navbar-item {
@@ -874,34 +776,28 @@ i:hover {
         justify-content: center;
         gap: 20px;
         margin-top: 80px;
-        margin-left: 40px;
+        margin-left: 50px;
+        width: 100%;
     }
 
     .main-seaction-img {
-        width: 150px;
-        height: 150px;
-        margin-left: 0px;
+        width: 200px;
+        height: 200px;
     }
 
     .main-seaction-word {
-        font-size: 14px;
+        font-size: 18px;
     }
 
     .main-seaction-words {
-        margin-top: 20px;
+        margin-top: 100px;
     }
-
-    .main-seaction-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    margin-top: 150px;
-}
 
     /* About seaction styleing */
 
     .about-seaction {
-        padding: 70px;
-        height: 200vh;
+        padding: 20px;
+        height: 120vh;
     }
 
     .about-seaction-text {
@@ -915,24 +811,13 @@ i:hover {
     .skills-seaction {
         padding: 70px 100px;
         height: 100vh;
+        margin-right: 50px;
     }
 
-    /* Contact seaction styleing */
-
-    .contact-seaction-divder {
-        margin-left: 0px;
-         height: 200vh;
+    /* footer section */
+    .footer-seaction {
+        background-color: rgb(48, 16, 78);
+        width: 100%;
     }
 
-    .contact-seaction-inputs {
-        margin-left: 0px;
-    }
-
-    .contact-seaction {
-        padding: 50px 120px;
-        height: 110vh;
-    }
 }
-
-
-
