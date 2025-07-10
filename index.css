@@ -114,13 +114,14 @@ i:hover {
     opacity: 0;
     animation: slide 2s ease-out forwards;
 }
-
+/*
 @keyframes slide {
     to {
         transform: translateY(0);
         opacity: 1;
     }
 }
+*/
 
 .main-seaction-words {
     display: flex;
@@ -589,6 +590,9 @@ i:hover {
 }
 
 @media screen and (min-width:420px) and (max-width:621px) {
+    body {
+    background: linear-gradient( #0900403);
+     }
 
     /* Navbar seaction styleing */
 
@@ -696,6 +700,10 @@ i:hover {
     }
 }
 @media screen and (max-width:420px) {
+
+       body {
+    background: linear-gradient( #0900403);
+     }
 
     /* Navbar seaction styleing */
 
