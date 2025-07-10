@@ -114,14 +114,14 @@ i:hover {
     opacity: 0;
     animation: slide 2s ease-out forwards;
 }
-/*
+
 @keyframes slide {
     to {
         transform: translateY(0);
         opacity: 1;
     }
 }
-*/
+
 
 .main-seaction-words {
     display: flex;
@@ -145,7 +145,7 @@ i:hover {
         step-end infinite;
     text-transform: uppercase;
 }
-
+/*
 @keyframes type {
 
     from {
@@ -164,6 +164,7 @@ i:hover {
         border-color: orange;
     }
 }
+*/
 
 .main-seaction-icon {
     width:250px;
